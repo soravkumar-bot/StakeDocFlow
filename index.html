@@ -3,137 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Age Verification</title>
-
-<style>
-/* Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-}
-
-/* ===== DESKTOP BACKGROUND ===== */
-body {
-    background: url('./screencapture.png') no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
-
-/* ===== DARK OVERLAY ===== */
-body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    
-    background: rgba(0,0,0,0.5); /* keep slight dark */
-    
-    backdrop-filter: blur(8px);          /* MAIN BLUR */
-    -webkit-backdrop-filter: blur(8px);  /* Safari support */
-    
-    z-index: 1;
-}
-
-/* ===== POPUP ===== */
-.age-verification-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    width: 90%;
-    max-width: 360px;
-    padding: 15px;
-
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(5px);
-    border-radius: 12px;
-    text-align: center;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    z-index: 2;
-}
-
-/* TEXT */
-.content h1 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.content p {
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-}
-
-/* BUTTONS */
-.buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    background-color: #0081a1;
-    color: #fff;
-    padding: 8px 12px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 700;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #0b00a1;
-}
-
-/* ===== MOBILE PERFECT FIX ===== */
-@media (max-width: 768px) {
-    body {
-        background: url('./screencapture.png') no-repeat top center;
-        background-size: contain;   /* SHOW FULL IMAGE */
-        background-color: #000;     /* fill empty space */
-        background-attachment: scroll;
-        min-height: 100vh;
-    }
-
-    .age-verification-container {
-        max-width: 280px;
-        padding: 12px;
-    }
-
-    .content h1 {
-        font-size: 1rem;
-    }
-
-    .content p {
-        font-size: 0.85rem;
-    }
-
-    .btn {
-        font-size: 0.8rem;
-        padding: 7px 10px;
-    }
-}
-</style>
+<title>StakeDocFlow - Simplify Your Documents</title>
+<meta name="description" content="PDF tools, templates, and document solutions for modern workflows.">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="age-verification-container">
-    <div class="content">
-        <h1>Age Verification</h1>
-        <p>You must be 18 or older to enter this site.</p>
+<header>
+  <div class="container nav">
+    <h2>StakeDocFlow</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Tools</a>
+      <a href="templates.html">Templates</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-        <div class="buttons">
-            <a href="http://newgrowthmedia.site/?utm_campaign=RlVX2rVT6a&v1=[v1]&v2=[v2]&v3=[v3]" class="btn">I am 18 or Older</a>
-            <a href="http://newgrowthmedia.site/?utm_campaign=RlVX2rVT6a&v1=[v1]&v2=[v2]&v3=[v3]" class="btn">I am Under 18</a>
-        </div>
+<section class="hero">
+  <div class="container">
+    <h1>Simplify Your Documents</h1>
+    <p>Powerful tools, templates, and resources to streamline your workflow.</p>
+    <a href="tools.html" class="btn">Explore Tools</a>
+  </div>
+</section>
+
+<section class="cards container">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4" alt="">
+    <h3>PDF Tools</h3>
+    <p>Merge, compress, and convert files instantly.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="">
+    <h3>Templates</h3>
+    <p>Professional contracts, invoices, and resumes.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="">
+    <h3>Resources</h3>
+    <p>Guides to manage documents efficiently.</p>
+  </div>
+</section>
+
+<section class="content container">
+  <h2>Why Choose Us</h2>
+  <p>StakeDocFlow helps individuals and businesses manage documents faster with simple tools and ready-to-use templates.</p>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Start Simplifying Today</h2>
+    <a href="templates.html" class="btn">Get Templates</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer">
+    <p>© 2026 StakeDocFlow</p>
+    <div>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
     </div>
-</div>
+  </div>
+</footer>
 
 </body>
 </html>
